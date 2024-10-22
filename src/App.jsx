@@ -9,7 +9,9 @@ function App() {
       <main>
         <Header />
         <div>
-          <h1>Page Content</h1>
+          <div className="hero-section"></div>
+          <div className="header-section"></div>
+          <div className="page-content"></div>
         </div>
         <Footer />
       </main>
