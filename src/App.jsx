@@ -8,7 +8,6 @@ import ProgramsIcon from "./assets/svgs/Programs-Icon.svg";
 import locationIcon from "./assets/images/location.png";
 import clockIcon from "./assets/images/clock.png";
 import phoneIcon from "./assets/images/phone.png";
-import { Link } from "react-router-dom";
 
 function App() {
 
