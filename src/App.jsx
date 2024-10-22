@@ -15,7 +15,7 @@ function App() {
     <>
       <main>
         <Header />
-        <div>
+        <div className="mb-12">
           <div className="hero-section flex flex-col items-center justify-evenly bg-[url('./assets/images/bg-image.jpg')] h-[44vh] bg-inherit bg-cover bg-no-repeat">
             <span className="text-[#ffffff] lg:w-[450px] w-[80%] text-[24px]">Providing independent research, analysis, and resources to facilitate informed policy decisions and administration of services</span>
             <div className="search-container flex items-center justify-center gap-2">
