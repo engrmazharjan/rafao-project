@@ -28,20 +28,20 @@ function App() {
               </button>
             </div>
           </div>
-          <div className="header-section bg-[#e1e5ea] flex lg:flex-row flex-col items-center justify-between px-24 py-8 gap-3">
-            <div className="flex flex-col items-center justify-center bg-[#ffffff] px-3 py-3 w-48 h-48">
+          <div className="header-section bg-[#e1e5ea] grid grid-cols-12 px-24 py-8 gap-5">
+            <div className="lg:col-span-3 md:col-span-6 col-span-12 flex flex-col items-center justify-center bg-[#ffffff] px-3 py-3 h-52">
               <img src={DataResearchIcon} width={70} height={70} />
               <span className="w-28 text-center text-[#142b47] text-[18px] leading-none mt-3 font-[600]">DATA & RESEARCH</span>
             </div>
-            <div className="flex flex-col items-center justify-center bg-[#ffffff] px-3 py-3 w-48 h-48">
+            <div className="lg:col-span-3 md:col-span-6 col-span-12 flex flex-col items-center justify-center bg-[#ffffff] px-3 py-3 h-52">
               <img src={GeographyIcon} width={70} height={70} />
               <span className="w-28 text-center text-[#142b47] text-[18px] leading-none mt-3 font-[600]">GEOGRAPHY & MAPPING</span>
             </div>
-            <div className="flex flex-col items-center justify-center bg-[#ffffff] px-3 py-3 w-48 h-48">
+            <div className="lg:col-span-3 md:col-span-6 col-span-12 flex flex-col items-center justify-center bg-[#ffffff] px-3 py-3 h-52">
               <img src={ProgramsIcon} width={70} height={70} />
               <span className="w-28 text-center text-[#142b47] text-[18px] leading-none mt-3 font-[600]">PROGRAMS & SERVICES</span>
             </div>
-            <div className="flex flex-col items-center justify-center bg-[#ffffff] px-3 py-3 w-48 h-48">
+            <div className="lg:col-span-3 md:col-span-6 col-span-12 flex flex-col items-center justify-center bg-[#ffffff] px-3 py-3  h-52">
               <img src={LegislativeIcon} width={70} height={70} />
               <span className="w-36 text-center text-[#142b47] text-[18px] leading-none mt-3 font-[600]">LEGISLATIVE FISCAL IMPACTS</span>
             </div>
