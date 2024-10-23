@@ -133,7 +133,8 @@ const Header = () => {
         id="flyout-menu"
         className={`${
           isMenuOpen ? "block" : "hidden"
-        } absolute left-0 right-0 bg-opacity-90 black mt-4 bo `}
+        } absolute left-0 right-0 bg-opacity-90 black mt-4 border-b-[4px] border-[#225089]`}
+        // style={{ borderBottomColor: '#225089' }}
       >
         {/* Main navigation */}
         <div className="md:flex">
