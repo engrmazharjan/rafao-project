@@ -25,7 +25,7 @@ const Header = () => {
         <div className=" flex items-center h-full ">
           {/* Hamburger menu for all screens */}
 
-          <div className="h-full w-[60px] bg-[#225089] flex items-center justify-center">
+          <div className="h-full w-[60px] bg-[#225089] flex items-center justify-center mr-4">
             <button
               onClick={toggleMenu}
               aria-expanded={isMenuOpen}
@@ -129,12 +129,9 @@ const Header = () => {
       {/* Flyout Menu */}
       <div
         id="flyout-menu"
-        className={`${
-          isMenuOpen ? "block" : "hidden"
-        } absolute left-0 right-0 bg-opacity-90 black mt-0 border-b-[4px] border-[#225089] shadow-lg`}
-        style={{
-          borderTop: "2px solid #f2f2f2;",
-        }}
+        className={`${isMenuOpen ? "block border-t-2 border-[#d0d0d0]" : "hidden"
+          } absolute left-0 right-0 bg-opacity-90 black mt-0 border-b-[4px] border-[#225089] shadow-lg`}
+
       >
         {/* Main navigation */}
         <div className="md:flex md:justify-center">

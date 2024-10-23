@@ -237,7 +237,7 @@ function App() {
           </div>
         </div>
         <div onClick={scrollToTop} className="flex items-center justify-end mr-16 mb-16 cursor-pointer">
-          <span className="mr-2">
+          <span className="mr-2 text-[#333333]">
             Back to top
           </span>
           <img src={upArrowIcon} width={32} height={32} className="rounded-full bg-[rgba(147,164,189,0.5)] p-1" />
