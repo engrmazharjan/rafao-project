@@ -82,7 +82,7 @@ function App() {
                 <hr className="w-10 border-t-4 border-[#8c6910]" />
                 <div className="mt-7 mb-3 flex flex-col">
                   <a className="underline text-[#3068ad] font-[600]">Local Government Finance</a>
-                  <p className="mt-2 w-2/3">
+                  <p className="mt-2 w-2/3 text-[#333333] leading-none">
                     Vestibulum rutrum quam vitae fringilla tincidunt. Suspendisse nec tortor urna. Ut laoreet sodales
                   </p>
                   <small className="text-[12px] mt-2 w-2/3 text-[#757575]"><span className="font-[600] text-[#333333]">Published:</span> Jan 2, 2020 <span className="bg-[#666666] text-[#ffffff] rounded px-1">Updated</span></small>
@@ -95,7 +95,7 @@ function App() {
 
                 <div className="mb-3 flex flex-col">
                   <a className="underline text-[#3068ad] font-[600] w-2/3">BEA Long-Range General Fund Revenue Plan for FY 2019-20 to FY 2022-23</a>
-                  <p className="mt-2 w-2/3">
+                  <p className="mt-2 w-2/3 text-[#333333] leading-none">
                     Vestibulum rutrum quam vitae fringilla tincidunt. Suspendisse nec tortor urna. Ut laoreet sodales
                   </p>
                   <small className="text-[12px] mt-2 w-2/3 text-[#757575]"><span className="font-[600] text-[#333333]">Published:</span> Dec 13, 2019 <span className="bg-[#666666] text-[#ffffff] rounded px-1">Updated</span></small>
@@ -120,9 +120,9 @@ function App() {
                 <h1 className="mb-2 text-[#1b3a61] text-[18px] font-[600]">Calendar of Events</h1>
                 <hr className="w-10 border-t-4 border-[#8c6910]" />
                 <div className="mt-7 mb-3 flex items-start">
-                  <div className="label mt-1 flex flex-col items-center justify-center bg-[#8c6910] w-12 h-16 text-[#ffffff]">
-                    <span>Nov</span>
-                    <span>22</span>
+                  <div className="label mt-1 flex flex-col items-center justify-center bg-[#8c6910] w-12 h-16 text-[#ffffff] text-[18px] font-[800]">
+                    <span className="leading-none">Nov</span>
+                    <span className="leading-none">22</span>
                   </div>
                   <div className="content ml-4">
                     <span className="m-0 px-2 text-[#333333] bg-[#d2b859] rounded text-[12px]">Updated</span>
@@ -147,9 +147,9 @@ function App() {
                 </div>
 
                 <div className="mb-3 flex items-start">
-                  <div className="label mt-1 flex flex-col items-center justify-center bg-[#8c6910] w-12 h-16 text-[#ffffff]">
-                    <span>Nov</span>
-                    <span>23</span>
+                  <div className="label mt-1 flex flex-col items-center justify-center bg-[#8c6910] w-12 h-16 text-[#ffffff] text-[18px] font-[800]">
+                    <span className="leading-none">Nov</span>
+                    <span className="leading-none">23</span>
                   </div>
                   <div className="content ml-4">
                     <span className="m-0 px-2 text-[#ffffff] bg-[#e9261d] rounded text-[12px]">Cancelled</span>
@@ -174,9 +174,9 @@ function App() {
                 </div>
 
                 <div className="mt-7 mb-3 flex items-start">
-                  <div className="label mt-1 flex flex-col items-center justify-center bg-[#8c6910] w-12 h-16 text-[#ffffff]">
-                    <span>Nov</span>
-                    <span>25</span>
+                  <div className="label mt-1 flex flex-col items-center justify-center bg-[#8c6910] w-12 h-16 text-[#ffffff] text-[18px] font-[800]">
+                    <span className="leading-none">Nov</span>
+                    <span className="leading-none">25</span>
                   </div>
                   <div className="content ml-4">
                     <h1 className="m-0 font-[600]">Board of Economic Advisors Meeting</h1>
@@ -200,9 +200,9 @@ function App() {
                 </div>
 
                 <div className="mt-7 mb-3 flex items-start">
-                  <div className="label mt-1 flex flex-col items-center justify-center bg-[#8c6910] w-12 h-16 text-[#ffffff]">
-                    <span>Nov</span>
-                    <span>28</span>
+                  <div className="label mt-1 flex flex-col items-center justify-center bg-[#8c6910] w-12 h-16 text-[#ffffff] text-[18px] font-[800]">
+                    <span className="leading-none">Nov</span>
+                    <span className="leading-none">28</span>
                   </div>
                   <div className="content ml-4">
                     <h1 className="m-0 font-[600]">Board of Economic Advisors Meeting</h1>
