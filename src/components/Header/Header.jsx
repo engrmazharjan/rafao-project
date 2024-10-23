@@ -17,7 +17,6 @@ const Header = () => {
   return (
     <header
       className="bg-white shadow-lg"
-      style={{ boxShadow: "inset 0 8px 8px -8px rgba(0, 0, 0, 0.5)" }}
     >
       <div className="flex items-center justify-between h-[100px]">
         {/* Your content here */}
@@ -73,20 +72,18 @@ const Header = () => {
           <img
             src={logo}
             alt="Logo"
-            className="mr-3"
-            style={{ height: "5rem" }}
+            className="mr-3 h-[5rem]"
           />
           {/* //h2 and p should be flex column */}
           <div className="flex flex-col">
             <h1
-              className="font-bold text-blue-900 uppercase"
-              style={{ fontFamily: "Roboto Slab", fontSize: "16px" }}
+              className="font-bold text-blue-900 uppercase lg:text-[16px] md:text-[14px] text-[12px] font-['Roboto_Slab']"
             >
               SOUTH CAROLINA
               <br />
               REVENUE AND FISCAL AFFAIRS OFFICE
             </h1>
-            <p className="italic text-sm leading-tight ">
+            <p className="italic text-sm leading-tight">
               Transforming data into solutions for South Carolina
             </p>
           </div>
