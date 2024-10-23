@@ -1,19 +1,23 @@
 import "./Footer.css";
 import insignia from "../../assets/images/insignia.png";
+
 const Footer = () => {
   return (
     <>
-      <div className="bg-[#225089] flex justify-around py-9  ">
-        <div className="text-white">
-          <h3 className="">
+      <div className="bg-[#1B3A61] py-9  flex flex-col items-center justify-between  text-center gap-10 md:grid md:grid-cols-3 md:text-left md:items-start md:justify-around px-9 max-md:px-3">
+       
+        <div className="text-white flex flex-col gap-10 max-md:items-center  ">
+          <h3 className="leading-tight font-bold">
             South Carolina
             <br />
             Revenue and Fiscal Affairs Office
           </h3>
-          <img src={insignia} />
+          <img className="w-32" src={insignia} alt="insignia" />
         </div>
-        <div className="h-full">
-          <ul className="flex flex-col text-[#E1E5EA] gap-2">
+
+        
+        <div className="h-full flex flex-col items-center">
+          <ul className="text-base flex flex-col text-[#CCCCCC] gap-2">
             <li>Privacy Statement</li>
             <li>FOIA</li>
             <li>Disclosures and Reporting</li>
@@ -22,24 +26,29 @@ const Footer = () => {
             <li>Contact Us</li>
           </ul>
         </div>
-        <div className="">
-          <div className="">
-            <p className="text-[#CCCCCC]">MAIN OFFICE</p>
-            <p className="text-[#E1E5EA]">
-              1000 assembly St, Rembert Dennis building, Suite 421 <br />{" "}
+
+        
+        <div className="text-sm flex flex-col ">
+          <div className="mb-7">
+            <p className="text-[#93A4BD] font-bold">MAIN OFFICE</p>
+            <p className="text-[#CCCCCC] leading-tight">
+              1000 assembly St, Rembert Dennis building, Suite 421 <br />
               Columbia, SC 29201
             </p>
           </div>
-          <div className="">
-            <p className="text-[#CCCCCC]">GEODETIC SURVEY SECTION </p>
-            <p className="text-[#E1E5EA]">
-              5 Geology Rd <br /> Columbia, SC 29212
+          <div className="mb-7">
+            <p className="text-[#93A4BD] font-bold">GEODETIC SURVEY SECTION</p>
+            <p className="text-[#CCCCCC] leading-tight">
+              5 Geology Rd <br />
+              Columbia, SC 29212
             </p>
           </div>
-          <div className="">
-            <p className="text-[#CCCCCC]">HEALTH and DEMOGRAPHICS DIVISION</p>
-            <p className="text-[#E1E5EA]">
-              1000 assembly St, Rembert Dennis building, Suite 240 <br />{" "}
+          <div>
+            <p className="text-[#93A4BD] font-bold">
+              HEALTH and DEMOGRAPHICS DIVISION
+            </p>
+            <p className="text-[#CCCCCC] leading-tight">
+              1000 assembly St, Rembert Dennis building, Suite 240 <br />
               Columbia, SC 29201
             </p>
           </div>
