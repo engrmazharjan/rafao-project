@@ -129,8 +129,8 @@ const Header = () => {
       {/* Flyout Menu */}
       <div
         id="flyout-menu"
-        className={`${isMenuOpen ? "block border-t-2 border-[#d0d0d0]" : "hidden"
-          } absolute left-0 right-0 bg-opacity-90 black mt-0 border-b-[4px] border-[#225089] shadow-lg`}
+        className={`${isMenuOpen ? "block border-t-2 border-t-[#d0d0d0] border-b-[4px] border-b-[#225089]" : "hidden"
+          } absolute left-0 right-0 bg-opacity-90 black mt-0 shadow-lg`}
 
       >
         {/* Main navigation */}
