@@ -28,20 +28,20 @@ function App() {
               </button>
             </div>
           </div>
-          <div className="header-section bg-[#e1e5ea] flex lg:flex-row flex-col items-center justify-between px-24 py-8 gap-3">
-            <div className="flex flex-col items-center justify-center bg-[#ffffff] px-3 py-3 w-48 h-48">
+          <div className="header-section bg-[#e1e5ea] grid grid-cols-12 px-24 py-8 gap-5">
+            <div className="lg:col-span-3 md:col-span-6 col-span-12 flex flex-col items-center justify-center bg-[#ffffff] px-3 py-3 h-52">
               <img src={DataResearchIcon} width={70} height={70} />
               <span className="w-28 text-center text-[#142b47] text-[18px] leading-none mt-3 font-[600]">DATA & RESEARCH</span>
             </div>
-            <div className="flex flex-col items-center justify-center bg-[#ffffff] px-3 py-3 w-48 h-48">
+            <div className="lg:col-span-3 md:col-span-6 col-span-12 flex flex-col items-center justify-center bg-[#ffffff] px-3 py-3 h-52">
               <img src={GeographyIcon} width={70} height={70} />
               <span className="w-28 text-center text-[#142b47] text-[18px] leading-none mt-3 font-[600]">GEOGRAPHY & MAPPING</span>
             </div>
-            <div className="flex flex-col items-center justify-center bg-[#ffffff] px-3 py-3 w-48 h-48">
+            <div className="lg:col-span-3 md:col-span-6 col-span-12 flex flex-col items-center justify-center bg-[#ffffff] px-3 py-3 h-52">
               <img src={ProgramsIcon} width={70} height={70} />
               <span className="w-28 text-center text-[#142b47] text-[18px] leading-none mt-3 font-[600]">PROGRAMS & SERVICES</span>
             </div>
-            <div className="flex flex-col items-center justify-center bg-[#ffffff] px-3 py-3 w-48 h-48">
+            <div className="lg:col-span-3 md:col-span-6 col-span-12 flex flex-col items-center justify-center bg-[#ffffff] px-3 py-3  h-52">
               <img src={LegislativeIcon} width={70} height={70} />
               <span className="w-36 text-center text-[#142b47] text-[18px] leading-none mt-3 font-[600]">LEGISLATIVE FISCAL IMPACTS</span>
             </div>
@@ -82,7 +82,7 @@ function App() {
                 <hr className="w-10 border-t-4 border-[#8c6910]" />
                 <div className="mt-7 mb-3 flex flex-col">
                   <a className="underline text-[#3068ad] font-[600]">Local Government Finance</a>
-                  <p className="mt-2 w-2/3">
+                  <p className="mt-2 w-2/3 text-[#333333] leading-none">
                     Vestibulum rutrum quam vitae fringilla tincidunt. Suspendisse nec tortor urna. Ut laoreet sodales
                   </p>
                   <small className="text-[12px] mt-2 w-2/3 text-[#757575]"><span className="font-[600] text-[#333333]">Published:</span> Jan 2, 2020 <span className="bg-[#666666] text-[#ffffff] rounded px-1">Updated</span></small>
@@ -95,7 +95,7 @@ function App() {
 
                 <div className="mb-3 flex flex-col">
                   <a className="underline text-[#3068ad] font-[600] w-2/3">BEA Long-Range General Fund Revenue Plan for FY 2019-20 to FY 2022-23</a>
-                  <p className="mt-2 w-2/3">
+                  <p className="mt-2 w-2/3 text-[#333333] leading-none">
                     Vestibulum rutrum quam vitae fringilla tincidunt. Suspendisse nec tortor urna. Ut laoreet sodales
                   </p>
                   <small className="text-[12px] mt-2 w-2/3 text-[#757575]"><span className="font-[600] text-[#333333]">Published:</span> Dec 13, 2019 <span className="bg-[#666666] text-[#ffffff] rounded px-1">Updated</span></small>
@@ -120,9 +120,9 @@ function App() {
                 <h1 className="mb-2 text-[#1b3a61] text-[18px] font-[600]">Calendar of Events</h1>
                 <hr className="w-10 border-t-4 border-[#8c6910]" />
                 <div className="mt-7 mb-3 flex items-start">
-                  <div className="label mt-1 flex flex-col items-center justify-center bg-[#8c6910] w-12 h-16 text-[#ffffff]">
-                    <span>Nov</span>
-                    <span>22</span>
+                  <div className="label mt-1 flex flex-col items-center justify-center bg-[#8c6910] w-12 h-16 text-[#ffffff] text-[18px] font-[800]">
+                    <span className="leading-none">Nov</span>
+                    <span className="leading-none">22</span>
                   </div>
                   <div className="content ml-4">
                     <span className="m-0 px-2 text-[#333333] bg-[#d2b859] rounded text-[12px]">Updated</span>
@@ -147,9 +147,9 @@ function App() {
                 </div>
 
                 <div className="mb-3 flex items-start">
-                  <div className="label mt-1 flex flex-col items-center justify-center bg-[#8c6910] w-12 h-16 text-[#ffffff]">
-                    <span>Nov</span>
-                    <span>23</span>
+                  <div className="label mt-1 flex flex-col items-center justify-center bg-[#8c6910] w-12 h-16 text-[#ffffff] text-[18px] font-[800]">
+                    <span className="leading-none">Nov</span>
+                    <span className="leading-none">23</span>
                   </div>
                   <div className="content ml-4">
                     <span className="m-0 px-2 text-[#ffffff] bg-[#e9261d] rounded text-[12px]">Cancelled</span>
@@ -174,9 +174,9 @@ function App() {
                 </div>
 
                 <div className="mt-7 mb-3 flex items-start">
-                  <div className="label mt-1 flex flex-col items-center justify-center bg-[#8c6910] w-12 h-16 text-[#ffffff]">
-                    <span>Nov</span>
-                    <span>25</span>
+                  <div className="label mt-1 flex flex-col items-center justify-center bg-[#8c6910] w-12 h-16 text-[#ffffff] text-[18px] font-[800]">
+                    <span className="leading-none">Nov</span>
+                    <span className="leading-none">25</span>
                   </div>
                   <div className="content ml-4">
                     <h1 className="m-0 font-[600]">Board of Economic Advisors Meeting</h1>
@@ -200,9 +200,9 @@ function App() {
                 </div>
 
                 <div className="mt-7 mb-3 flex items-start">
-                  <div className="label mt-1 flex flex-col items-center justify-center bg-[#8c6910] w-12 h-16 text-[#ffffff]">
-                    <span>Nov</span>
-                    <span>28</span>
+                  <div className="label mt-1 flex flex-col items-center justify-center bg-[#8c6910] w-12 h-16 text-[#ffffff] text-[18px] font-[800]">
+                    <span className="leading-none">Nov</span>
+                    <span className="leading-none">28</span>
                   </div>
                   <div className="content ml-4">
                     <h1 className="m-0 font-[600]">Board of Economic Advisors Meeting</h1>
