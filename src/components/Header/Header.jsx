@@ -130,102 +130,102 @@ const Header = () => {
           </button>
         </nav>
       </div>
-
+      
       {/* Flyout Menu */}
-      <div
-        id="flyout-menu"
-        className={`${
-          isMenuOpen ? "block" : "hidden"
-        } absolute left-0 right-0 bg-opacity-90 black mt-4 border-b-[4px] border-[#225089]`}
-        // style={{ borderBottomColor: '#225089' }}
-      >
-        {/* Main navigation */}
-        <div className="md:flex">
-          {/* Left-side menu (Main links) */}
-          <div className="md:w-1/3 p-4 space-y-3 bg-[#E1E5EA]">
-            <a href="#home" className="block text-xl  font-bold text-center">
-              Home
-            </a>
-            <hr className="w-60 border-t-1 mt-1 border-[#C3C3C3]  mx-auto" />
+<div
+  id="flyout-menu"
+  className={`${
+    isMenuOpen ? "block" : "hidden"
+  } absolute left-0 right-0 bg-opacity-90 black mt-4 border-b-[4px] border-[#225089]`}
+>
+    {/* Main navigation */}
+    <div className="md:flex md:justify-center">
+    {/* Left-side menu (Main links) */}
+    <div className="w-full md:w-1/3 p-4 space-y-3 bg-[#E1E5EA] text-left md:text-center"> 
+        <a href="#home" className="block text-xl font-bold">
+        Home
+        </a>
+        <hr className="w-80 border-t-1 mt-1 border-[#C3C3C3] mx-0 md:mx-auto" /> 
 
-            <a href="#news" className="block text-xl font-bold text-center">
-              News & Events
-            </a>
-            <hr className="w-60 border-t-1 mt-1 border-[#C3C3C3]  mx-auto" />
-            <a href="#about" className="block text-xl font-bold text-center">
-              About Us
-            </a>
-            <hr className="w-60 border-t-1 mt-1 border-[#C3C3C3]  mx-auto" />
+        <a href="#news" className="block text-xl font-bold">
+        News & Events
+        </a>
+        <hr className="w-80 border-t-1 mt-1 border-[#C3C3C3] mx-0 md:mx-auto" /> 
 
-            <a href="#contact" className="block text-xl font-bold text-center">
-              Contact Us
-            </a>
-            <hr className="w-60 border-t-1 mt-1 border-[#C3C3C3]  mx-auto" />
+        <a href="#about" className="block text-xl font-bold">
+        About Us
+        </a>
+        <hr className="w-80 border-t-1 mt-1 border-[#C3C3C3] mx-0 md:mx-auto" /> 
 
-            <a href="#boards" className="block text-xl font-bold text-center">
-              Boards & Committees
-            </a>
-          </div>
+        <a href="#contact" className="block text-xl font-bold">
+        Contact Us
+        </a>
+        <hr className="w-80 border-t-1 mt-1 border-[#C3C3C3] mx-0 md:mx-auto" /> 
 
-          {/* Right-side menu (Data & Research, etc.) only for desktop */}
-          <div className="hidden md:flex md:flex-wrap md:w-2/3 py-4 px-6 gap-x-2 bg-white">
-            <div className="w-1/4 py-2">
-              <h3 className="text-lg font-semibold text-[#1B3A61]">
-                DATA & RESEARCH
-              </h3>
-              <hr className="w-10 border-t-4 border-[#8C6910] mt-1 mb-2" />
-              <ul className="space-y-1 text-xs font-medium">
-                <li>Economy</li>
-                <li>State Finances</li>
-                <li>Education</li>
-                <li>Healthcare</li>
-                <li>Local Government</li>
-                <li>Population and Demographics</li>
-                <li>State Register Calculation</li>
-                <li>Presentations</li>
-              </ul>
-            </div>
-            <div className="w-1/4 py-2">
-              <h3 className="text-lg font-semibold text-[#1B3A61]">
-                GEOGRAPHY & MAPPING
-              </h3>
-              <hr className="w-10 border-t-4 border-[#8C6910] mt-1 mb-2" />
-              <ul className="space-y-1 text-xs font-medium">
-                <li>Transportation Carrier Network (uber)</li>
-                <li>SC Real Time Network</li>
-                <li>SC State GIS</li>
-                <li>Maps</li>
-                <li>Interactive Mapping</li>
-                <li>Statewide Aerial Imagery</li>
-              </ul>
-            </div>
-            <div className="w-1/4 py-2">
-              <h3 className="text-lg font-semibold text-[#1B3A61]">
-                PROGRAMS & SERVICES
-              </h3>
-              <hr className="w-10 border-t-4 border-[#8C6910] mt-1 mb-2" />
-              <ul className="space-y-1 text-xs font-medium">
-                <li>Precinct Demographics and Redistricting</li>
-                <li>State 911 Program</li>
-                <li>Geodetic Survey</li>
-                <li>Fiscal Analysis</li>
-                <li>2020 Census</li>
-              </ul>
-            </div>
-            <div className="w-1/4 py-2">
-              <h3 className="text-lg font-semibold text-[#1B3A61]">
-                LEGISLATIVE FISCAL IMPACTS
-              </h3>
-              <hr className="w-10 border-t-4 border-[#8C6910] mt-1 mb-2" />
-              <ul className="space-y-1 text-xs font-medium">
-                <li>Current General Assembly Session</li>
-                <li>Previous General Assembly Session</li>
-                <li>Forms</li>
-              </ul>
-            </div>
-          </div>
+        <a href="#boards" className="block text-xl font-bold">
+        Boards & Committees
+        </a>
+    </div>
+
+    {/* Right-side menu (Data & Research, etc.) */}
+    <div className="w-full md:w-2/3 py-4 px-6 gap-x-2 bg-white md:flex md:flex-wrap">
+        <div className="w-full md:w-1/4 py-2 text-left "> 
+        <h3 className="text-lg font-semibold text-[#1B3A61]">
+            DATA & RESEARCH
+        </h3>
+        <hr className="w-10 border-t-4 border-[#8C6910] mt-1 mb-2 mx-0 " /> 
+        <ul className="space-y-1 text-xs font-medium">
+            <li>Economy</li>
+            <li>State Finances</li>
+            <li>Education</li>
+            <li>Healthcare</li>
+            <li>Local Government</li>
+            <li>Population and Demographics</li>
+            <li>State Register Calculation</li>
+            <li>Presentations</li>
+        </ul>
         </div>
-      </div>
+        <div className="w-full md:w-1/4 py-2 text-left "> 
+        <h3 className="text-lg font-semibold text-[#1B3A61]">
+            GEOGRAPHY & MAPPING
+        </h3>
+        <hr className="w-10 border-t-4 border-[#8C6910] mt-1 mb-2 mx-0" /> 
+        <ul className="space-y-1 text-xs font-medium">
+            <li>Transportation Carrier Network (uber)</li>
+            <li>SC Real Time Network</li>
+            <li>SC State GIS</li>
+            <li>Maps</li>
+            <li>Interactive Mapping</li>
+            <li>Statewide Aerial Imagery</li>
+        </ul>
+        </div>
+        <div className="w-full md:w-1/4 py-2 text-left "> 
+        <h3 className="text-lg font-semibold text-[#1B3A61]">
+            PROGRAMS & SERVICES
+        </h3>
+        <hr className="w-10 border-t-4 border-[#8C6910] mt-1 mb-2 mx-0 " /> 
+        <ul className="space-y-1 text-xs font-medium">
+            <li>Precinct Demographics and Redistricting</li>
+            <li>State 911 Program</li>
+            <li>Geodetic Survey</li>
+            <li>Fiscal Analysis</li>
+            <li>2020 Census</li>
+        </ul>
+        </div>
+        <div className="w-full md:w-1/4 py-2 text-left "> 
+        <h3 className="text-lg font-semibold text-[#1B3A61]">
+            LEGISLATIVE FISCAL IMPACTS
+        </h3>
+        <hr className="w-10 border-t-4 border-[#8C6910] mt-1 mb-2 mx-0 " /> 
+        <ul className="space-y-1 text-xs font-medium">
+            <li>Current General Assembly Session</li>
+            <li>Previous General Assembly Session</li>
+            <li>Forms</li>
+        </ul>
+        </div>
+    </div>
+    </div>
+</div>
     </header>
   );
 };
