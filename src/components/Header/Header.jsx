@@ -1,4 +1,7 @@
 import React, { useState } from "react";
+import search from '../../assets/svgs/search.svg'; 
+import searchFilled from '../../assets/svgs/search-filled.svg';
+import logo from '../../assets/images/logo.png';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -73,7 +76,7 @@ const Header = () => {
 
           {/* Logo and title */}
           <img
-            src="src\assets\images\logo.png"
+            src={logo}
             alt="Logo"
             className="mr-3"
             style={{ height: "5rem" }}
@@ -109,7 +112,7 @@ const Header = () => {
             {/* use search-filled svg from assets */}
             {isSearchOpen ? (
               <>
-                <img src="src\assets\svgs\search-filled.svg" />
+                <img src={searchFilled} />
                 <div className="absolute top-11 right-1 bg-[#0074c1] shadow-md p-2 flex items-center space-x-2 mt--2">
                   <input
                     type="text"
@@ -122,7 +125,7 @@ const Header = () => {
                 </div>
               </>
             ) : (
-              <img src="src\assets\svgs\search.svg" />
+              <img src={search} />
             )}
           </button>
         </nav>
