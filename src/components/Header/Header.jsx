@@ -15,8 +15,18 @@ const Header = () => {
   };
 
   return (
-    <header className="bg-white shadow-lg p-4">
-      <div className="flex items-center justify-between">
+    <header className="bg-white shadow-lg p-4" 
+        // style={{ boxShadow: '0 10px 15px -3px #225089, 0 4px 6px -2px #225089' }}
+        // style={{ boxShadow: '0 15px 20px -3px #225089, 0 8px 10px -2px #225089' }}
+        style={{ boxShadow: '0 10px 15px 5px #225089, 0 4px 6px 3px #225089' }} // Increased spread radius
+
+    >
+      {/* <div className="flex items-center justify-between"> */}
+      {/* <div className="flex items-center justify-between shadow-md">  */}
+      <div className="flex items-center justify-between" >
+      {/* <div className="flex items-center justify-between" style={{ boxShadow: '0 4px 4px rgba(0, 0, 0, 0.1)' }}> */}
+  {/* Your content here */}
+
         <div className="flex items-center">
           {/* Hamburger menu for all screens */}
           <button
@@ -95,43 +105,25 @@ const Header = () => {
           <a href="#boards" className="text-blue-900">
             BOARDS & COMMITTEES
           </a>
-          <button 
-            onClick={toggleSearch} 
-            className="text-blue-900 relative"
-        >
-        {/* use search-filled svg from assets */}
-        {isSearchOpen ? (
-            <>
-            <img src="src\assets\svgs\search-filled.svg" />
-            <div className="absolute top-11 right-1 bg-[#0074c1] shadow-md p-2 flex items-center space-x-2 mt--2">
-                <input
-                  type="text"
-                  placeholder="Enter search term"
-                  className="border rounded-md p-2 w-64"
-                />
-                <button className="bg-[#0074c1] text-white px-4 py-2 border border-white">
-                  SEARCH
-                </button>
-              </div>
-            </>
-        ):(
-            <img src="src\assets\svgs\search.svg" />
-
-        )}
-
-            {/* Conditionally render search bar (NEW) */}
-            {/* {isSearchOpen && (
-              <div className="absolute top-11 right-1 bg-[#0074c1] shadow-md p-2 flex items-center space-x-2 mt--2">
-                <input
-                  type="text"
-                  placeholder="Enter search term"
-                  className="border rounded-md p-2 w-64"
-                />
-                <button className="bg-blue-600 text-white px-4 py-2 rounded-md">
-                  SEARCH
-                </button>
-              </div>
-            )} */}
+          <button onClick={toggleSearch} className="text-blue-900 relative">
+            {/* use search-filled svg from assets */}
+            {isSearchOpen ? (
+              <>
+                <img src="src\assets\svgs\search-filled.svg" />
+                <div className="absolute top-11 right-1 bg-[#0074c1] shadow-md p-2 flex items-center space-x-2 mt--2">
+                  <input
+                    type="text"
+                    placeholder="Enter search term"
+                    className="border p-2 w-64"
+                  />
+                  <button className="bg-[#0074c1] text-white px-4 py-2 border border-white">
+                    SEARCH
+                  </button>
+                </div>
+              </>
+            ) : (
+              <img src="src\assets\svgs\search.svg" />
+            )}
           </button>
         </nav>
       </div>
@@ -141,31 +133,38 @@ const Header = () => {
         id="flyout-menu"
         className={`${
           isMenuOpen ? "block" : "hidden"
-        } absolute left-0 right-0 bg-opacity-90 black py-4 shadow-lg`}
+        } absolute left-0 right-0 bg-opacity-90 black mt-4 bo `}
       >
         {/* Main navigation */}
         <div className="md:flex">
           {/* Left-side menu (Main links) */}
-          <div className="md:w-1/3 p-4 space-y-6 bg-slate-500">
-            <a href="#home" className="block text-2xl">
+          <div className="md:w-1/3 p-4 space-y-3 bg-[#E1E5EA]">
+            <a href="#home" className="block text-xl  font-bold text-center">
               Home
             </a>
-            <a href="#news" className="block text-2xl">
+            <hr className="w-60 border-t-1 mt-1 border-[#C3C3C3]  mx-auto" />
+
+            <a href="#news" className="block text-xl font-bold text-center">
               News & Events
             </a>
-            <a href="#about" className="block text-2xl">
+            <hr className="w-60 border-t-1 mt-1 border-[#C3C3C3]  mx-auto" />
+            <a href="#about" className="block text-xl font-bold text-center">
               About Us
             </a>
-            <a href="#contact" className="block text-2xl">
+            <hr className="w-60 border-t-1 mt-1 border-[#C3C3C3]  mx-auto" />
+
+            <a href="#contact" className="block text-xl font-bold text-center">
               Contact Us
             </a>
-            <a href="#boards" className="block text-2xl">
+            <hr className="w-60 border-t-1 mt-1 border-[#C3C3C3]  mx-auto" />
+
+            <a href="#boards" className="block text-xl font-bold text-center">
               Boards & Committees
             </a>
           </div>
 
           {/* Right-side menu (Data & Research, etc.) only for desktop */}
-          <div className="hidden md:flex md:flex-wrap md:w-2/3 py-4 px-6 gap-x-2 bg-slate-100">
+          <div className="hidden md:flex md:flex-wrap md:w-2/3 py-4 px-6 gap-x-2 bg-white">
             <div className="w-1/4 py-2">
               <h3 className="text-lg font-semibold text-[#1B3A61]">
                 DATA & RESEARCH
