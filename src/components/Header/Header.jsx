@@ -9,7 +9,6 @@ const Header = () => {
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
-
   const toggleSearch = () => {
     setIsSearchOpen(!isSearchOpen);
   };
